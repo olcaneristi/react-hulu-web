@@ -1,0 +1,7 @@
+export { default as Collections } from "./IconCollection"
+export { default as Home } from "./IconHome"
+export { default as Profile } from "./IconProfile"
+export { default as Search } from "./IconSearch"
+export { default as Trending } from "./IconTrend"
+export { default as Title } from "./IconTitle"
+export { default as Verified } from "./IconVerified"
