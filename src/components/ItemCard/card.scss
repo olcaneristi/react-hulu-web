@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+
+.itemcard {
+  .itemcard-container {
+    margin: 1.5rem 1rem;
+    cursor: pointer;
+    width: 400px;
+    font-family: "Baloo 2", cursive;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.25s ease;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  h3 {
+    color: rgb(231, 238, 235);
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: rgb(47, 167, 147);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: rgb(169, 199, 212);
+    font-weight: 400;
+    font-style: normal;
+  }
+}

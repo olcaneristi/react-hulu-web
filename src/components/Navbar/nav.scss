@@ -6,44 +6,28 @@ section.navbar {
   .nav-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     overflow: auto;
-    ul {
+    height: 70px;
+
+    h2 {
       display: flex;
       list-style-type: none;
+      margin-left: 15px;
+      color: #aca3a3;
+      opacity: 0.75;
+      font-size: 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: "Baloo Tamma 2", cursive;
+      font-weight: 400;
 
-      li {
-        margin-right: 1.5rem;
-        font-weight: 400;
-        opacity: 0.75;
-        font-size: 20px;
-        font-family: "Baloo Tamma 2", cursive;
-        white-space: nowrap;
-
-        a {
-          text-decoration: none;
-          color: #aca3a3;
-
-          &:focus {
-            color: #ffffff;
-            font-size: 21px;
-            transition: all 0.2s ease;
-          }
-
-          &::after {
-            display: block;
-            padding-bottom: 1px;
-            content: "";
-            border-bottom: 3px solid #1a8676;
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-          }
-
-          &:hover::after,
-          &:focus::after {
-            transform: scaleX(1);
-          }
-        }
+      &:hover {
+        color: #e9e6e6;
+        opacity: 1;
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
       }
     }
   }
