@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
 .itemcard {
+  transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
   .itemcard-container {
     margin: 2rem 1rem;
     width: 400px;
     height: 230px;
-    transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -webkit-transition: all 0.25s ease;
-
-    &:hover {
-      transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-    }
+    overflow: hidden;
   }
 
   button {
@@ -25,7 +27,7 @@
     img {
       width: 100%;
       object-fit: contain;
-      border-radius: 10px;
+      border-radius: 15px;
       margin-bottom: 10px;
     }
   }
@@ -48,6 +50,7 @@
     overflow-y: scroll;
     padding: 10px 20px !important;
     text-align: justify;
+    transition: color 0.2s ease;
 
     &::-webkit-scrollbar {
       display: none;
