@@ -5,10 +5,14 @@
     margin: 2rem 1rem;
     width: 400px;
     height: 230px;
+    transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
 
     &:hover {
       transform: scale(1.1);
-      transition: all 0.25s ease;
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
     }
   }
 
