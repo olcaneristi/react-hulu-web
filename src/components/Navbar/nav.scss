@@ -32,3 +32,13 @@ section.navbar {
     }
   }
 }
+
+@media screen and (max-width: 350px) {
+  section.navbar {
+    .nav-container {
+      h2 {
+        font-size: 15px;
+      }
+    }
+  }
+}

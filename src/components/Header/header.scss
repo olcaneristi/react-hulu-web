@@ -98,3 +98,45 @@ section.header {
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  section.header {
+    padding-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    .header-container {
+      flex-direction: column-reverse;
+
+      .header-nav {
+        margin-top: 2rem;
+        justify-content: center;
+
+        a {
+          margin: 0;
+        }
+      }
+      .hulu-btn {
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.header {
+    .header-container {
+      .header-nav {
+        .nav-verified {
+          display: none;
+        }
+
+        a {
+          span {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
