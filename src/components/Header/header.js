@@ -14,7 +14,7 @@ function Header() {
     <section className="header">
       <div className="header-container">
         <nav className="header-nav">
-          <a href="/home" className="nav-home">
+          <a href="/#" className="nav-home">
             <Home />
             <span>HOME</span>
           </a>
