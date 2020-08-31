@@ -55,6 +55,8 @@
       font-size: 35px;
       text-align: center;
       letter-spacing: 1px;
+      line-height: 40px;
+      margin: 10px 0;
     }
 
     p {
@@ -75,8 +77,7 @@
 @media screen and (max-width: 750px) {
   .itemcard {
     .itemcard-container {
-      margin-right: 0;
-      margin-left: 0;
+      margin: 1rem 0 !important;
     }
   }
 }
@@ -95,16 +96,17 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
   .itemcard-container {
     margin: 0 !important;
   }
 
   .ReactModal__Content.ReactModal__Content--after-open {
     h3 {
-      font-size: 27px !important;
+      font-size: 24px !important;
       margin-bottom: 10px;
       margin-top: 10px;
+      line-height: 22px !important;
     }
     p,
     span {
