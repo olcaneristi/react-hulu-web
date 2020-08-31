@@ -20,6 +20,9 @@ section.header {
         flex-direction: column;
         align-items: center;
         text-decoration: none;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
 
         .home-nav {
           margin-left: -7px;
@@ -27,7 +30,8 @@ section.header {
 
         &:hover {
           transform: scale(1.05);
-          transition: all 0.5s ease;
+          -moz-transform: scale(1.05);
+          -webkit-transform: scale(1.05);
 
           svg path {
             stroke: #ffffff;
