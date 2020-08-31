@@ -15,7 +15,7 @@ const ItemCard = forwardRef(({ movie }, ref) => {
           <img
             alt="view"
             loading="lazy"
-            src={`${base_url}${movie.backdrop_path}`}
+            src={`${base_url}${movie.backdrop_path || movie.poster_path}`}
           />
         </button>
 
@@ -24,18 +24,22 @@ const ItemCard = forwardRef(({ movie }, ref) => {
           portalClassName="modal"
           onRequestClose={() => setModalIsOpen(false)}
         >
-          <h3>{movie.title}</h3>
+          <h3>{movie.title || movie.original_name}</h3>
           <p>
             <span>{movie.overview}</span>
           </p>
           <p>
-            Release Date: <span>{movie.release_date}</span>
+            Release Date:{" "}
+            <span>{movie.release_date || movie.first_air_date}</span>
           </p>
           <p>
             Rating: <span>{movie.vote_average}</span>
           </p>
           <p>
             Likes: <span>{movie.vote_count}&nbsp;people like this. </span>
+          </p>
+          <p>
+            Likes: <span>{movie.genre_ids}&nbsp;people like this. </span>
           </p>
         </Modal>
       </div>
