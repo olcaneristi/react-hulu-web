@@ -38,9 +38,6 @@ const ItemCard = forwardRef(({ movie }, ref) => {
           <p>
             Likes: <span>{movie.vote_count}&nbsp;people like this. </span>
           </p>
-          <p>
-            Likes: <span>{movie.genre_ids}&nbsp;people like this. </span>
-          </p>
         </Modal>
       </div>
     </div>
