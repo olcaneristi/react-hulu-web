@@ -42,7 +42,7 @@
     outline: none;
     font-family: "Baloo 2", cursive;
     overflow-y: scroll;
-    padding: 5px 20px 10px 20px !important;
+    padding: 10px 20px !important;
     text-align: justify;
 
     &::-webkit-scrollbar {
@@ -56,14 +56,21 @@
       text-align: center;
       letter-spacing: 1px;
       line-height: 40px;
-      margin: 10px 0;
     }
-
-    p {
-      color: rgb(58, 233, 189);
-      font-size: 15px;
-      letter-spacing: 0.5px;
+    .viewer-count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 5px;
+      p {
+        color: rgb(58, 233, 189);
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
     }
 
     span {
@@ -105,12 +112,15 @@
   .ReactModal__Content.ReactModal__Content--after-open {
     h3 {
       font-size: 28px !important;
-      margin: 15px 0 !important;
-      line-height: 22px !important;
+      margin: 10px 0 !important;
+      line-height: 25px !important;
     }
-    p,
-    span {
-      font-size: 14px !important;
+    .viewer-count {
+      margin: 0 -20px 5px -20px;
+      p,
+      span {
+        font-size: 13px !important;
+      }
     }
   }
 }
