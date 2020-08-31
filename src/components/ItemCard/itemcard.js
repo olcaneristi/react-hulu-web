@@ -24,19 +24,19 @@ const ItemCard = forwardRef(({ movie }, ref) => {
           portalClassName="modal"
           onRequestClose={() => setModalIsOpen(false)}
         >
-          <h3>{movie.title || movie.original_name}</h3>
+          <h3>{movie.name || movie.original_title || movie.title}</h3>
           <p>
             <span>{movie.overview}</span>
           </p>
           <p>
-            Release Date:{" "}
+            Çıkış tarihi:{" "}
             <span>{movie.release_date || movie.first_air_date}</span>
           </p>
           <p>
-            Rating: <span>{movie.vote_average}</span>
+            Değerlendirme: <span>{movie.vote_average}</span>
           </p>
           <p>
-            Likes: <span>{movie.vote_count}&nbsp;people like this. </span>
+            Beğeni: <span>{movie.vote_count}&nbsp;kişi bunu beğendi. </span>
           </p>
         </Modal>
       </div>
