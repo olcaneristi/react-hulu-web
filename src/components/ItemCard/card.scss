@@ -4,7 +4,7 @@
   .itemcard-container {
     margin: 2rem 1rem;
     width: 400px;
-    height: 200px;
+    height: 230px;
 
     &:hover {
       transform: scale(1.1);
@@ -17,6 +17,7 @@
     background: none;
     cursor: pointer;
     outline: none;
+    height: 230px;
     img {
       width: 100%;
       object-fit: contain;
@@ -86,6 +87,10 @@
 
     .itemcard-container {
       padding: 10px 0;
+
+      &:hover {
+        transform: none;
+      }
     }
   }
 }
