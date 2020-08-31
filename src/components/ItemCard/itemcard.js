@@ -1,5 +1,6 @@
 import React, { forwardRef, useState } from "react"
 import Modal from "react-modal"
+import { Star, Like, Date } from "../icons"
 
 const base_url = "https://image.tmdb.org/t/p/original"
 
@@ -25,18 +26,22 @@ const ItemCard = forwardRef(({ movie }, ref) => {
           onRequestClose={() => setModalIsOpen(false)}
         >
           <h3>{movie.name || movie.original_title || movie.title}</h3>
+          <div className="viewer-count">
+            <p>
+              <Date />
+              &nbsp;<span>{movie.release_date || movie.first_air_date}</span>
+            </p>
+            <p>
+              <Star />
+              &nbsp;<span>{movie.vote_average}</span>
+            </p>
+            <p>
+              <Like />
+              &nbsp;<span>{movie.vote_count}</span>
+            </p>
+          </div>{" "}
           <p>
             <span>{movie.overview}</span>
-          </p>
-          <p>
-            Çıkış tarihi:{" "}
-            <span>{movie.release_date || movie.first_air_date}</span>
-          </p>
-          <p>
-            Değerlendirme: <span>{movie.vote_average}</span>
-          </p>
-          <p>
-            Beğeni: <span>{movie.vote_count}&nbsp;kişi bunu beğendi. </span>
           </p>
         </Modal>
       </div>
