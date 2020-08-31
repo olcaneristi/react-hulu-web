@@ -1,5 +1,9 @@
-.results div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.results {
+  padding-bottom: 2.5rem;
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
