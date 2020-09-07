@@ -1,0 +1,23 @@
+@import "../Header/header.scss";
+@import "../Navbar/nav.scss";
+@import "../MovieList/result.scss";
+@import "../ItemCard/card.scss";
+@import "../Footer/footer.scss";
+@import "./variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: $bgPrimary;
+}
+
+.App {
+  max-width: $originalWidth - 10%;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: $globalFont;
+}
