@@ -1,5 +1,7 @@
+@import "../assets/variables.scss";
+
 section.footer {
-  padding-bottom: 1rem;
+  padding-bottom: $fingerSize + 6px;
   .footer-container {
     align-items: center;
     justify-content: center;
@@ -7,14 +9,14 @@ section.footer {
     text-align: center;
 
     p {
-      color: rgb(127, 135, 136);
-      font-weight: 400;
-      font-size: 14px;
+      color: $colorFooterText;
+      font-weight: $fontWeight;
+      font-size: $fontSize;
     }
 
     a {
       text-decoration: none;
-      color: rgb(106, 221, 96);
+      color: $colorOriginal;
     }
   }
 }
@@ -23,7 +25,7 @@ section.footer {
   section.footer {
     .footer-container {
       p {
-        font-size: 12px;
+        font-size: $fontSize - 2px;
       }
     }
   }

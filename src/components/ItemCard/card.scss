@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import "../assets/variables.scss";
 
 .itemcard {
   transition: all 0.25s ease;
@@ -12,9 +13,9 @@
   }
 
   .itemcard-container {
-    margin: 2rem 1rem;
-    width: 400px;
-    height: 230px;
+    margin: ($fingerSize * 3) + 2px $fingerSize + 6px;
+    width: $cardWidth;
+    height: $cardHeight;
     overflow: hidden;
   }
 
@@ -23,32 +24,33 @@
     background: none;
     cursor: pointer;
     outline: none;
-    height: 230px;
+    height: $cardHeight;
+
     img {
-      width: 100%;
+      width: $originalWidth;
       object-fit: contain;
-      border-radius: 15px;
-      margin-bottom: 10px;
+      border-radius: $fingerSize + 5px;
+      margin-bottom: $fingerSize;
     }
   }
 }
 
 .modal {
   .ReactModal__Overlay.ReactModal__Overlay--after-open {
-    background: rgba(0, 0, 0, 0.85) !important;
+    background: $bgOverlay !important;
   }
 
   .ReactModal__Content.ReactModal__Content--after-open {
-    max-width: 500px;
-    height: 300px;
-    background: rgba(58, 67, 77, 0.82) !important;
+    max-width: $popupWidth;
+    height: $popupHeight;
+    background: $bgContent !important;
     margin: auto;
     border: none !important;
-    border-radius: 10px !important;
+    border-radius: $fingerSize !important;
     outline: none;
-    font-family: "Baloo 2", cursive;
+    font-family: $fontText;
     overflow-y: scroll;
-    padding: 10px 20px !important;
+    padding: $fingerSize $fingerSize + 10px !important;
     text-align: justify;
     transition: color 0.2s ease;
 
@@ -57,23 +59,22 @@
     }
 
     h3 {
-      color: rgb(231, 238, 235);
-      font-weight: 500;
-      font-size: 35px;
+      color: $colorPopupText;
+      font-weight: $fontWeight + 100;
+      font-size: $fontSize + 21px;
       text-align: center;
       letter-spacing: 1px;
-      line-height: 40px;
+      line-height: $fingerSize + 30px;
     }
     .viewer-count {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 5px;
+      margin-bottom: $fingerSize - 5px;
       p {
-        color: rgb(58, 233, 189);
-        font-size: 15px;
+        font-size: $fontSize + 1px;
         letter-spacing: 1px;
-        margin: 5px;
+        margin: $fingerSize - 5px;
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -81,9 +82,10 @@
     }
 
     span {
-      color: rgb(192, 214, 223);
-      font-weight: 400;
+      color: $colorModalText;
+      font-weight: $fontWeight;
       font-style: normal;
+      padding-top: $fingerSize - 7px;
     }
   }
 }
@@ -91,18 +93,18 @@
 @media screen and (max-width: 750px) {
   .itemcard {
     .itemcard-container {
-      margin: 1rem 0 !important;
+      margin: $fingerSize + 6px 0 !important;
     }
   }
 }
 
 @media screen and (max-width: 500px) {
   .itemcard {
-    width: 95%;
+    width: $originalWidth - 5%;
 
     .itemcard-container {
-      padding: 10px 0;
-      margin: 5px 0 !important;
+      padding: $fingerSize 0;
+      margin: $fingerSize - 5px 0 !important;
 
       &:hover {
         transform: none;
@@ -118,15 +120,15 @@
 
   .ReactModal__Content.ReactModal__Content--after-open {
     h3 {
-      font-size: 28px !important;
-      margin: 10px 0 !important;
-      line-height: 25px !important;
+      font-size: $fontSize * 2 !important;
+      margin: $fingerSize 0 !important;
+      line-height: $fingerSize + 11px !important;
     }
     .viewer-count {
       margin: 0 -20px 5px -20px;
       p,
       span {
-        font-size: 13px !important;
+        font-size: $fontSize - 1px !important;
       }
     }
   }

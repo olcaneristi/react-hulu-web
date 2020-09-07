@@ -1,11 +1,13 @@
+@import "../assets/variables.scss";
+
 section.header {
   display: flex;
   align-items: center;
-  padding-top: 2.5rem;
-  margin-bottom: 1rem;
+  padding-top: $fingerSize * 4;
+  margin-bottom: $fingerSize + 6px;
 
   .header-container {
-    width: 100%;
+    width: $originalWidth;
     display: flex;
 
     .header-nav {
@@ -13,9 +15,9 @@ section.header {
       align-items: center;
 
       a {
-        width: 60px;
-        margin-top: 20px;
-        margin-right: 30px;
+        width: $headerWidth;
+        margin-top: $fingerSize + 10px;
+        margin-right: $fingerSize + 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,22 +26,18 @@ section.header {
         -moz-transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
 
-        .home-nav {
-          margin-left: -7px;
-        }
-
         &:hover {
           transform: scale(1.05);
           -moz-transform: scale(1.05);
           -webkit-transform: scale(1.05);
 
           svg path {
-            stroke: #ffffff;
+            stroke: $colorWhite;
             transition: all 0.5s ease;
           }
 
           span {
-            color: #ffffff;
+            color: $colorWhite;
             opacity: 1;
             transition: all 0.5s ease-out;
           }
@@ -51,7 +49,7 @@ section.header {
           }
 
           svg path {
-            stroke: #1ce783;
+            stroke: $colorSvg;
             transition: all 0.5s ease;
           }
         }
@@ -64,26 +62,26 @@ section.header {
         }
 
         svg {
-          margin-bottom: 7px;
+          margin-bottom: $fingerSize - 3px;
         }
 
         span {
-          font-size: 12px;
+          font-size: $fontSize - 2px;
           font-weight: bold;
           opacity: 0;
           letter-spacing: 1px;
-          color: #ebd9d9;
+          color: $colorSecondary;
         }
       }
       a.nav-home {
         &:hover {
           .nothome {
-            fill: #ffffff;
+            fill: $colorWhite;
           }
         }
         &:focus {
           .nothome {
-            fill: #1ce783;
+            fill: $colorSvg;
           }
         }
       }
@@ -91,7 +89,7 @@ section.header {
 
     .hulu-btn {
       margin-left: auto;
-      margin-right: 12px;
+      margin-right: $fingerSize + 5px;
       outline: none;
       border: none;
       background: none;
@@ -105,13 +103,13 @@ section.header {
 
 @media screen and (max-width: 750px) {
   section.header {
-    padding-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    padding-top: $fingerSize + 14px;
+    margin-bottom: $fingerSize - 2px;
     .header-container {
       flex-direction: column-reverse;
 
       .header-nav {
-        margin-top: 2rem;
+        margin-top: ($fingerSize * 3) + 2px;
         justify-content: space-around;
 
         a {
@@ -137,7 +135,7 @@ section.header {
 
         a {
           span {
-            font-weight: normal;
+            font-weight: $fontWeight;
           }
         }
       }

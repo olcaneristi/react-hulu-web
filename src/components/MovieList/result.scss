@@ -1,5 +1,7 @@
+@import "../assets/variables.scss";
+
 .results {
-  padding-bottom: 2.5rem;
+  padding-bottom: $fingerSize * 4;
 
   div {
     display: flex;
