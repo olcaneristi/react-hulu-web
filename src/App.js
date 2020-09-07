@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "./assets/index.scss"
+import "./components/assets/index.scss"
 import Header from "./components/Header/header"
 import Navbar from "./components/Navbar/navbar"
 import MovieResult from "./components/MovieList/results"
