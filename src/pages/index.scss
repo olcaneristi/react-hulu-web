@@ -1,0 +1,25 @@
+.trending__page,
+.verified__page,
+.profile__page,
+.collections__page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+
+  h1 {
+    color: white;
+    animation: scale 1s forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
