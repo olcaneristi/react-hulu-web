@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import {
   Trending,
   Home,
@@ -14,35 +15,35 @@ function Header() {
     <section className="header">
       <div className="header-container">
         <nav className="header-nav">
-          <a href="/#" className="nav-home">
+          <Link to="/" className="nav-home">
             <Home />
             <span>HOME</span>
-          </a>
-          <a href="/#" className="nav-trend">
+          </Link>
+          <Link to="/trending" className="nav-trend">
             <Trending />
             <span>TRENDING</span>
-          </a>
-          <a href="/#" className="nav-verified">
+          </Link>
+          <Link to="/verified" className="nav-verified">
             <Verified />
             <span>VERIFIED</span>
-          </a>
-          <a href="/#" className="nav-collections">
+          </Link>
+          <Link to="/collections" className="nav-collections">
             <Collections />
             <span>COLLECTIONS</span>
-          </a>
-          <a href="/#" className="nav-search">
+          </Link>
+          <Link className="nav-search">
             <Search />
             <span>SEARCH</span>
-          </a>
-          <a href="/#" className="nav-profile">
+          </Link>
+          <Link to="/profile" className="nav-profile">
             <Profile />
             <span>PROFILE</span>
-          </a>
+          </Link>
         </nav>
         <button className="hulu-btn">
-          <a href="/#">
+          <Link to="/">
             <Title />
-          </a>
+          </Link>
         </button>
       </div>
     </section>
