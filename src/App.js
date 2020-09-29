@@ -1,20 +1,25 @@
-import React, { useState } from "react"
+import React from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "./components/assets/index.scss"
 import Header from "./components/Header/header"
-import Navbar from "./components/Navbar/navbar"
-import MovieResult from "./components/MovieList/results"
-import requests from "./components/requests"
 import Footer from "./components/Footer/footer"
 
-function App() {
-  const [Option, setOption] = useState(requests.fetchTrending)
+import { Home, Trending, Verified, Collections, Profile } from "./pages"
 
+function App() {
   return (
     <div className="App">
-      <Header />
-      <Navbar setOption={setOption} />
-      <MovieResult Option={Option} />
-      <Footer />
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/trending" component={Trending} />
+          <Route path="/verified" component={Verified} />
+          <Route path="/collections" component={Collections} />
+          <Route path="/profile" component={Profile} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   )
 }
