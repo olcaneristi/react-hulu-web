@@ -9,6 +9,8 @@ section.header {
   .header-container {
     width: $originalWidth;
     display: flex;
+    justify-content: space-between;
+    animation: fadeUp 2s forwards;
 
     .header-nav {
       display: flex;
@@ -88,7 +90,6 @@ section.header {
     }
 
     .hulu-btn {
-      margin-left: auto;
       margin-right: $fingerSize + 5px;
       outline: none;
       border: none;
@@ -97,6 +98,15 @@ section.header {
       &:active {
         opacity: 0.75;
       }
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      transform: translateY(-300px);
+    }
+    to {
+      transform: translateX(0);
     }
   }
 }
