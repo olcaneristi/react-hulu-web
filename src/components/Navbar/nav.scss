@@ -12,10 +12,6 @@ section.navbar {
     overflow: auto;
     height: $navHeight;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
     h2 {
       display: flex;
       list-style-type: none;
