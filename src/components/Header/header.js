@@ -31,7 +31,7 @@ function Header() {
             <Collections />
             <span>COLLECTIONS</span>
           </Link>
-          <Link className="nav-search">
+          <Link to="/" className="nav-search">
             <Search />
             <span>SEARCH</span>
           </Link>
