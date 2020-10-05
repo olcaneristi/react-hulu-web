@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import Navbar from "../components/Navbar/navbar"
 import MovieList from "../components/MovieList/results"
-import requests from "../components/requests"
+import fetch from "../components/Navbar/fetch"
 
 function Home() {
-  const [Option, setOption] = useState(requests.fetchTrending)
+  const [Option, setOption] = useState(fetch.fetchTrending)
 
   return (
     <section className="home__page">
