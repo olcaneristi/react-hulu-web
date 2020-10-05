@@ -1,6 +1,7 @@
 # Welcome!
 
-#### I developed an Hulu Responsive web app clone using React + SASS to improve myself.
+#### I developed an Hulu Responsive web app clone using React + SASS to improve myself. 
+###### I saw it on [Clever Programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ) channel and I made improvements (more effective, featured and functional).
 
 ## [Live Demo](https://react-hulu-app.vercel.app/)
 
