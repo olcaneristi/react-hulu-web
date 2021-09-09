@@ -12,6 +12,13 @@
 - [Axios](https://github.com/axios/axios)
 - [SVGR](https://react-svgr.com/)
 
+#### Screenshots
+![huluweb](https://user-images.githubusercontent.com/45832621/132773260-bae6a387-e019-4b1a-91b7-b40e0a97c7c2.gif)
+
+![hulumobile](https://user-images.githubusercontent.com/45832621/132773284-afca8133-69a6-4f52-9f92-0b6b74b40eb2.gif)
+
+
+
 #### First, Install deps
 
 ```bash
