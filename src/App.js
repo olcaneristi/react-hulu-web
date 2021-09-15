@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './components/assets/index.scss';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
+import ReactGA from 'react-ga';
 
 import { Home, Trending, Verified, Collections, Profile } from './pages';
 
